@@ -1,6 +1,4 @@
-const fnTest = require('./hack_1');
-
-
+const fnTest = require('./hack_1'); 
 
 describe('hack-1', () => {
     test('validar estatus de tipo 200', async () => {

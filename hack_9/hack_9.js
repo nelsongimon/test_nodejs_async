@@ -5,9 +5,15 @@
 - Return: el total del "response"
 */
 
+const fetch = require("cross-fetch");
+
 async function fnTest() {
-  //...
-  return 
+  const url = 'https://jsonplaceholder.typicode.com/posts';
+  const response = await fetch(url, {
+    method: 'POST'
+  })
+  const data = response.json();
+  return data;
 }
 
 module.exports = fnTest;
